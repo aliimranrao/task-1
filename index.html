@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body style="text-align: center; background-color: black;">
+<h1 style="color:royalblue;">Current Day & Time</h1><br><br><br><br><br>
+    <p id="result 1" style="color :white" > </p>
+    <p id="result 2" style="color :white" > </p>
+    <script>
+
+        var today = new Date();
+        var day = today.getDay();
+        var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+        var time = "Current time: "+ today.getHours() + " pm " + " : " + today.getMinutes() + " : " + today.getSeconds();
+        var dateTime = time
+        document.getElementById("result 1").innerHTML =  dateTime 
+        document.getElementById("result 2").innerHTML =  "Today: " + daylist[day]
+
+
+    </script>
+    
+</body>
+</html>
